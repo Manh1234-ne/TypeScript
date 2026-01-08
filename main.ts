@@ -52,3 +52,37 @@ const myFun = (): void => {
   
 }
 myFun()
+
+
+
+
+
+// 1. Hàm viết hoa tên
+function toUpperCaseName(name: string): string {
+  return name.toUpperCase();
+}
+
+// 2. Hàm tính bình phương
+function calculateSquare(n: number): number {
+  return n * n;
+}
+
+// 3. Hàm kiểm tra số chẵn
+function isEven(n: number): boolean {
+  return n % 2 === 0;
+}
+
+// 4. Hàm tính tổng mảng
+function sumArray(numbers: number[]): number {
+  let sum = 0;
+  for (let num of numbers) {
+    sum += num;
+  }
+  return sum;
+}
+
+// 5. Hàm lấy thông tin sinh viên
+function getStudentName(student: { name: string; age: number; gender: boolean }): string {
+  const gioiTinh = student.gender ? "Nam" : "Nữ";
+  return `Tên: ${student.name}, Tuổi: ${student.age}, Giới tính: ${gioiTinh}`;
+}

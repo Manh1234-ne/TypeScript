@@ -33,3 +33,29 @@ var myFun = function () {
     console.log("Hello");
 };
 myFun();
+// 1. Hàm viết hoa tên
+function toUpperCaseName(name) {
+    return name.toUpperCase();
+}
+// 2. Hàm tính bình phương
+function calculateSquare(n) {
+    return n * n;
+}
+// 3. Hàm kiểm tra số chẵn
+function isEven(n) {
+    return n % 2 === 0;
+}
+// 4. Hàm tính tổng mảng
+function sumArray(numbers) {
+    var sum = 0;
+    for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+        var num = numbers_1[_i];
+        sum += num;
+    }
+    return sum;
+}
+// 5. Hàm lấy thông tin sinh viên
+function getStudentName(student) {
+    var gioiTinh = student.gender ? "Nam" : "Nữ";
+    return "T\u00EAn: ".concat(student.name, ", Tu\u1ED5i: ").concat(student.age, ", Gi\u1EDBi t\u00EDnh: ").concat(gioiTinh);
+}
